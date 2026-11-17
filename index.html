@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Explorer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Music Explorer</h1>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- SECTION 1: ARTIST SEARCH -->
+
+        <section class="search-section">
+
+            <p class="section-label">01 / ARTIST SEARCH</p>
+
+            <h2>Who are you listening to?</h2>
+
+            <form id="artistForm">
+
+                <div class="search-row">
+
+                    <div class="form-group">
+                        <label for="artistSelect">Choose an artist</label>
+
+                        <select id="artistSelect">
+                            <option value="">Select a featured artist</option>
+                            <option value="Radiohead">Radiohead</option>
+                            <option value="Björk">Björk</option>
+                            <option value="Daft Punk">Daft Punk</option>
+                            <option value="Massive Attack">Massive Attack</option>
+                        </select>
+                    </div>
+
+                    <span class="or-text">or</span>
+
+                    <div class="form-group search-input">
+                        <label for="artistSearch">Search by artist name</label>
+
+                        <input
+                            type="text"
+                            id="artistSearch"
+                            placeholder="Enter artist name">
+                    </div>
+
+                    <button type="submit" id="searchButton">
+                        Search
+                    </button>
+
+                </div>
+
+            </form>
+
+            <p class="helper-text">
+                Featured artists: Radiohead, Björk, Daft Punk, Massive Attack
+            </p>
+
+            <p id="searchMessage" role="status" aria-live="polite"></p>
+
+        </section>
+
+
+        <!-- SECTION 2: ARTIST INFORMATION -->
+
+        <section class="artist-section">
+
+            <div class="section-heading">
+                <p class="section-label">02 / ARTIST INFORMATION</p>
+                <span class="small-text">Artist overview</span>
+            </div>
+
+            <div id="artistInfo" class="artist-info">
+
+                <div class="artist-image">
+                    <img
+                        id="artistImage"
+                        src=""
+                        alt="Artist image"
+                        hidden>
+
+                    <span id="artistImagePlaceholder">
+                        Artist image<br>when available
+                    </span>
+                </div>
+
+                <div class="artist-details">
+
+                    <h2 id="artistName">Select an artist</h2>
+
+                    <p id="artistTags" class="artist-tags"></p>
+
+                    <p id="artistDescription">
+                        Choose an artist from the list or search by name
+                        to explore their music.
+                    </p>
+
+                    <a
+                        id="artistLink"
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        hidden>
+                        Read more on Last.fm ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 3: ALBUMS AND SONGS -->
+
+        <section class="albums-section">
+
+            <p class="section-label">03 / ALBUMS AND SONGS</p>
+
+            <h2>Explore albums</h2>
+
+            <p class="helper-text">
+                Choose an album to see its details and tracks.
+            </p>
+
+            <div class="albums-layout">
+
+                <!-- Album cards -->
+
+                <div class="albums-container">
+
+                    <div id="albumGrid" class="album-grid">
+                        <!-- JavaScript creates album cards here -->
+                    </div>
+
+                    <p id="albumMessage" class="helper-text">
+                        Search for an artist to see their albums.
+                    </p>
+
+                </div>
+
+
+                <!-- Selected album details -->
+
+                <div class="album-details-container">
+
+                    <p class="section-label">ALBUM DETAILS</p>
+
+                    <div id="albumDetails" class="album-details">
+
+                        <div class="album-header">
+
+                            <div class="album-cover">
+                                <img
+                                    id="selectedAlbumImage"
+                                    src=""
+                                    alt="Album artwork"
+                                    hidden>
+                                <span id="albumImagePlaceholder">
+                                    Artwork
+                                </span>
+                            </div>
+
+                            <div>
+                                <h3 id="selectedAlbumTitle">
+                                    Select an album
+                                </h3>
+
+                                <p id="selectedAlbumArtist"></p>
+
+                                <p id="selectedAlbumInfo" class="small-text"></p>
+                            </div>
+
+                        </div>
+
+                        <h4>Track listing</h4>
+
+                        <table class="track-table">
+
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Title</th>
+                                    <th>Time</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="trackList">
+                                <!-- JavaScript creates track rows here -->
+                            </tbody>
+
+                        </table>
+
+                        <p id="trackMessage" class="helper-text">
+                            Select an album to view its tracks.
+                        </p>
+
+                        <a
+                            id="albumLink"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            hidden>
+                            View album on Last.fm ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

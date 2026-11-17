@@ -32,7 +32,7 @@ The application will include the following features:
 
 - **Published application:** (https://cerulean-khapse-5cde21.netlify.app/))
 - **GitHub repository:** (https://github.com/JiC-Lau/project2a)
-- **Project video presentation:** [Add your video URL here](https://example.com/)
+- **Project video presentation:** (https://video.laurea.fi/media/Project2a_Ji+Choi/0_fvglirao)
 
 ## About the application
 

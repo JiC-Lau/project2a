@@ -30,8 +30,8 @@ The application will include the following features:
 
 ## Web links
 
-- **Published application:** [Add your GitHub Pages URL here](https://yourusername.github.io/your-repository/)
-- **GitHub repository:** [Add your repository URL here](https://github.com/yourusername/your-repository)
+- **Published application:** (https://cerulean-khapse-5cde21.netlify.app/))
+- **GitHub repository:** (https://github.com/JiC-Lau/project2a)
 - **Project video presentation:** [Add your video URL here](https://example.com/)
 
 ## About the application
@@ -68,17 +68,14 @@ The project will use the following technologies:
 
 ## Running the application locally
 
-1. Clone or download this repository to your computer.
-2. Open the project folder.
-3. Open `index.html` in a web browser.
+the application can be accessed directly through the published Netlify website:
+https://cerulean-khapse-5cde21.netlify.app
+
 
 ## Screenshots
 
-Add at least one screenshot of your working application.
+<img width="862" height="699" alt="image" src="https://github.com/user-attachments/assets/d5dc79d1-a0a3-422e-a28c-c1fb00ec9b56" />
 
-Example:
-
-![Screenshot of the application](img/screenshot.png)
 
 ## Known issues / limitations
 
@@ -99,11 +96,39 @@ This project is planned as individual work.
 Reflect on your work and learning process.
 
 - What did I succeed in?
+  
+I managed to build and publish my Music Explorer application using the Last.fm API. The application allows users to search for artists and explore their albums and songs.
+Compared to my first project, this was a step forward because I worked with a live API instead of just storing and managing data in the browser.
+
 - What was challenging?
+
+The biggest challenge was connecting the application to the Last.fm API and deploying it through Netlify.
+Although I had practiced JavaScript in earlier workshops, I still find it difficult to remember the syntax and know how to put everything together.
+I relied heavily on Microsoft Copilot throughout this project, especially when setting up Netlify and handling the API key securely. I needed detailed, step-by-step guidance. When something didn't work, I shared screenshots of the errors and followed Copilot's suggestions to troubleshoot them one by one.
+For example, I learned that a small mistake in a folder name could stop Netlify from recognizing a function.
+I realized that understanding individual JavaScript concepts is different from knowing how to combine them into a working application.
+  
 - What would I improve if I had more time?
+
+I would improve the visual design and add more interactive features, such as filtering albums or displaying more detailed music information.
+I would also like to improve the error messages so users can better understand when information is unavailable.
+
 - What did I learn about HTML, CSS, JavaScript and DOM scripting?
+
+I learned how HTML provides the structure, CSS controls the appearance, and JavaScript makes the application interactive.
+More importantly, I learned how JavaScript can retrieve information from an external API using fetch() and async/await, process JSON data, and dynamically display the results using DOM manipulation.
+I also learned how Netlify Functions can be used to keep an API key out of the browser code (but honestly I'm not sure if my API key is now kept confidentially as it kept asking me to upgrade to keep confidential information)
+
 - What remained unclear or what would I like to learn more about?
+
+I still need more practice with asynchronous JavaScript, API requests and error handling.
+I also want to better understand how Netlify Functions work and how the frontend communicates with the server.
+While Copilot helped me complete the project, I recognize that I still depend on AI guidance quite a lot. My next goal is to become more independent in writing JavaScript and troubleshooting errors.
+This project reminded me that I don't necessarily need to memorize every JavaScript command, but I do need to understand the logic behind the code and how different parts work together.
+
 - My self-assessed project grade: **xx/10 points**
+
+If I need to be assessed by independent work (Without using AI), then my grade would be low. However, with the support from AI tool, I was able to build a full working web-application. So if it's okey to use AI, then 10. If not okey, then 7...
 
 ## Sources and acknowledgements
 
